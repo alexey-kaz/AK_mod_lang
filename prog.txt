@@ -1,0 +1,9 @@
+begin
+var
+@
+a
+15
+b = 13
+@
+if
+goto
