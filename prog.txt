@@ -1,9 +1,9 @@
-begin
-var
-@
-a
-15
-b = 13
-@
-if
-goto
+program {
+int a = -4;
+bool b = true;
+string str = "string";
+if (a = -4) {
+    b = false;
+}
+}
+
