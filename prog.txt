@@ -1,10 +1,12 @@
 program
 {
   int
-  a = -51, b = 6, c;
+  a = -51, b = 1, c;
   string x = "abc", y, z = "abcd";
- 
+  bool g = true;
+
   c = (a + b) + 2;
+  write(a,b,c);
 /*  if (c >= 100 or x == z) **/
   if (c >= 100 or x == z)
   {
@@ -14,14 +16,21 @@ program
   }
   else
     c = a = 21 + b;
-  while (c > 100 and c != 100)
+
+  goto L;
+M:
+  write ("Label M",x);
+  c = 90;
+  while (c < 100 and c != 100 and g)
   {
     c = c - -+5;
     write (c);
-    goto L;
-    x = x + "step";
+    x = x + " ok";
   }
 L:
-  write (x);
+  write ("Label L",x,b);
+  b = b - 1;
+  if (b >= 0)
+    goto M;
   write (-c--a);
 }
